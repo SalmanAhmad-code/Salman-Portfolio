@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Spotify-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Tuneify - Web Player: Music For Everyone</title>
+</head>
+
+<body>
+    <div class="left_panel ">
+        <nav class="navbar page_nav">
+            <ul>
+                <li><span class="material-symbols-outlined">
+                        home
+                    </span><a>Home</a></li>
+                <li class="search "><span class="material-symbols-outlined">
+                        search
+                    </span><a>Search</a></li>
+            </ul>
+            <span class="material-symbols-outlined menu_close">
+                close
+            </span>
+        </nav>
+
+        <div class="librarytab navbar">
+            <div class="heading">
+                <span class="material-symbols-outlined library">
+                    library_books
+                </span>
+                <h3 class="library">Your Library</h3>
+                <div class="arrow_add">
+                    <span class="material-symbols-outlined add">
+                        add
+                    </span>
+                    <span class="material-symbols-outlined arrow">
+                        arrow_forward
+                    </span>
+                </div>
+            </div>
+            <div class="song_list">
+                <h2>Songs</h2>
+                <div class="tablist">
+                    <div id="songtab" class="tab" href="">
+                        <div class="image">
+                            <img src="" alt="">
+                        </div>
+                        <div class="title">
+                            <p hidden class="song-url"></p>
+                            <a hidden href=""></a>
+                            <h3></h3>
+                            <h6></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right_panel navbar">
+        <div class="r-header">
+            <div class="menu-navigations">
+                <span class="material-symbols-outlined burger">
+                    menu
+                </span>
+                <div class="navigations">
+                    <span class="material-symbols-outlined left-nav">
+                        chevron_left
+                    </span>
+                    <span class="material-symbols-outlined right-nav">
+                        chevron_right
+                    </span>
+                </div>
+            </div>
+            <div class="user">
+                <div class="btn">
+                    <button class="signup">SignUp</button>
+                    <button class="login">Login</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="spoti-playlist">
+            <h2>Tuneify Playlist</h2>
+            <div class="songs-list">
+                <div style="display: none;" class="song-tab">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="triangle">
+                            <path d="M15 10l-9 5V5l9 5z"></path>
+                        </svg>
+                    </div>
+                    <img src="" alt="">
+                    <div class="song-tab-text">
+                        <h3></h3>
+                        <p></p>
+                        <h5 hidden></h5>
+                        <h6 hidden></h6>
+                    </div>
+                </div>
+                <div class="AddSongBtn">
+                    <span class="material-symbols-outlined">
+                        playlist_add
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="playbar">
+            <div class="songinfo">
+                <img src="" alt="">
+                <div class="title">
+                    <h3></h3>
+                    <h6></h6>
+                </div>
+            </div>
+            <div class="play">
+                <div class="playbuttons-and-seek-line">
+                    <div class="song-control">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" id="Previous">
+                            <path fill="#ffffff"
+                                d="M13.75 13.0351C13.75 13.8459 12.8357 14.3196 12.1733 13.852L5.04034 8.81698C4.47592 8.41857 4.47592 7.58146 5.04034 7.18305L12.1733 2.14801C12.8357 1.68042 13.75 2.15416 13.75 2.96498L13.75 13.0351zM1.75 13.25C1.75 13.6642 2.08579 14 2.5 14 2.91421 14 3.25 13.6642 3.25 13.25L3.25 2.75C3.25 2.33579 2.91421 2 2.5 2 2.08579 2 1.75 2.33579 1.75 2.75V13.25z"
+                                class="color212121 svgShape"></path>
+                        </svg>
+                        <div class="play-pause">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="Play">
+                                <path fill="none" d="M0 0h48v48H0z"></path>
+                                <path
+                                    d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-4 29V15l12 9-12 9z"
+                                    fill="#ffffff" class="color000000 svgShape"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="Pause">
+                                <path fill="none" d="M0 0h48v48H0z"></path>
+                                <path
+                                    d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-2 28h-4V16h4v16zm8 0h-4V16h4v16z"
+                                    fill="#ffffff" class="color000000 svgShape"></path>
+                            </svg>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" id="Next">
+                            <path fill="#ffffff"
+                                d="M2 2.96495C2 2.15413 2.91427 1.68039 3.57668 2.14798L10.7097 7.18302C11.2741 7.58143 11.2741 8.41854 10.7097 8.81695L3.57668 13.852C2.91427 14.3196 2 13.8458 2 13.035V2.96495zM14 2.75C14 2.33579 13.6642 2 13.25 2 12.8358 2 12.5 2.33579 12.5 2.75V13.25C12.5 13.6642 12.8358 14 13.25 14 13.6642 14 14 13.6642 14 13.25V2.75z"
+                                class="color212121 svgShape"></path>
+                        </svg>
+                    </div>
+                    <div class="playline">
+                        <div class="dura-bar">
+                            <div class="currentdura"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="duration"></p>
+            </div>
+            <div class="volume" id="volume">
+                <span class="material-symbols-outlined">
+                    volume_up
+                </span>
+                <input type="range" name="current-vol">
+            </div>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+    <script src="song-loader.js"></script>
+    <script src="volume-btn.js"></script>
+</body>
+
+</html>
